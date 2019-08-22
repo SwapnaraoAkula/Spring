@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  <bean id="emp" class="com.digi.SpringProject2.Employee">
+     <constructor-arg value="ram"></constructor-arg>
+     <constructor-arg value="bangalore"></constructor-arg>
+     <constructor-arg>
+     	<map>
+     		<entry key="r" value="reading"></entry>
+     		<entry key="w" value="writing"></entry>
+     		<entry key="p" value="playing"></entry>
+     	</map>
+     </constructor-arg>
+  </bean>
+  
+  <bean id="cust" class="com.digi.SpringProject2.Customer">
+     <property name="name" value="ram"></property>
+     <property name="address" value="bangalore"></property>
+     <property name="phoneno">
+     	<list>
+     		<value>9823456777</value>
+     		<value>9821234567</value>
+     		<value>8345678911</value>
+     	</list>
+     </property>
+  </bean>
+  
+</beans>
